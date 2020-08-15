@@ -1,5 +1,7 @@
 aux_source_directory(. SRC_LIST)
 
+add_definitions(-DUSE_STD_STL)
+
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
 add_library(utils_static STATIC ${SRC_LIST})
